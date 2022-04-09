@@ -27,7 +27,7 @@ heartbeat:Disconnect()
 
 
 ## Changing the characters position on the server
-When you cahnge the position of the character on the server it takes over replication from the client, this causes similar effects to anchoring the player
+When you change the position of the character on the server it takes over replication from the client, this causes similar effects to anchoring the player
 
 ### Mitigation
 To make the effect seamless all you need to do is make the teleportation happen on the client, not only will this make the teleportation seamless to other players it will also make the effect more seamless for the player as well.
