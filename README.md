@@ -5,4 +5,5 @@ This repository has documentation for tria.OS, feel free to make well written pu
 
 # Advanced
 [Making spectate seamless](SeamlessSpectate.md)
+[MapLib](MapLib.md)
 
