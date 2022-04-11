@@ -58,17 +58,6 @@ This function is the equivalent of `Lib.btnFuncs[5] = function() end` in Flood E
 
 
 
-
-
-
-
-
-
-
-
-
-### MapLib:GetButtonEvent(buttonId: `number`): `Event`
-
 ### MapLib:SetLiquidType(liquid: `BasePart`, liquidType: `string`): `nil`
 
 ### MapLib:MovePart(part: `BasePart`, movement: `Vector3`, duration: `number?`): `nil`
