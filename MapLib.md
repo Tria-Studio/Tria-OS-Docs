@@ -25,7 +25,10 @@ local MapLib = ServerStorage.Bindables.GetMapLib:Invoke()()
 
 MapLib:AllowSliding(true)
 ```
-This function can be used to change sliding state in maps.
+This function can be used to change sliding state in maps. True enables sliding and false disables sliding.
+
+-----------------------------------------------------
+
 
 
 
