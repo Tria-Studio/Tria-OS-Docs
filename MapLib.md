@@ -12,7 +12,7 @@ local MapLib = ServerStorage.Bindables.GetMapLib:Invoke()()
 
 MapLib:Alert("This is an Alert!", Color3.fromRGB(255, 255, 255), 10)
 ```
-Alerts can be used to send a message to everyone, they can be customized by color and duration.
+This function can be used to send a message to everyone, they can be customized by color and duration.
 
 -----------------------------------------------------
 
@@ -31,6 +31,7 @@ This function can be used to change sliding state in maps. True enables sliding 
 
 ### MapLib:ChangeMusic(musicId: `string|number`, volume: `number?`, startTick: `number?`): `nil`
 
+Example:
 ```lua
 local ServerStorage = game:GetService("ServerStorage")
 local MapLib = ServerStorage.Bindables.GetMapLib:Invoke()()
@@ -40,6 +41,20 @@ MapLib:ChangeMusic(8166551934, 0.5, 5) --changes the background music to 8166551
 This function can be used to change the current music playing in maps, this also replicates to spectators.
 
 -----------------------------------------------------
+
+### MapLib:GetButtonEvent(buttonId: `number`): `Event`
+Example:
+```lua
+Lib:GetButtonEvent(5):Connect(function(player) -- player value here is the player that pressed the button
+    MapLib:Alert("Button 5 was pressed!", Color3.fromRGB(255, 255, 255), 4)
+end)
+```
+This function is the equivalent of `Lib.btnFuncs[5] = function() end` in Flood Escape 2. It can be used to run functions once a button was been pressed.
+
+-----------------------------------------------------
+
+
+
 
 
 
