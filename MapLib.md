@@ -39,6 +39,9 @@ Lib:ChangeMusic(8166551934, 0.5, 5) --changes the background music to 8166551934
 ```
 This function can be used to change the current music playing in maps, this also replicates to spectators.
 
+-----------------------------------------------------
+
+
 
 
 
