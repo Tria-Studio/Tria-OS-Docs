@@ -7,6 +7,7 @@ This does not include deprecated items.
 
 Example:
 ```lua
+local ServerStorage = game:GetService("ServerStorage")
 local MapLib = ServerStorage.Bindables.GetMapLib:Invoke()()
 
 MapLib:Alert("This is an Alert!", Color3.fromRGB(255, 255, 255), 10)
