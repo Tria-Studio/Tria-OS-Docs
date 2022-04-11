@@ -7,9 +7,6 @@ This does not include deprecated items.
 
 Example:
 ```lua
-local ServerStorage = game:GetService("ServerStorage")
-local MapLib = ServerStorage.Bindables.GetMapLib:Invoke()()
-
 MapLib:Alert("This is an Alert!", Color3.fromRGB(255, 255, 255), 10)
 ```
 This function can be used to send a message to everyone, they can be customized by color and duration.
@@ -20,9 +17,6 @@ This function can be used to send a message to everyone, they can be customized 
 
 Example:
 ```lua
-local ServerStorage = game:GetService("ServerStorage")
-local MapLib = ServerStorage.Bindables.GetMapLib:Invoke()()
-
 MapLib:AllowSliding(true)
 ```
 This function can be used to change sliding state in maps. True enables sliding and false disables sliding.
@@ -33,9 +27,6 @@ This function can be used to change sliding state in maps. True enables sliding 
 
 Example:
 ```lua
-local ServerStorage = game:GetService("ServerStorage")
-local MapLib = ServerStorage.Bindables.GetMapLib:Invoke()()
-
 MapLib:ChangeMusic(8166551934, 0.5, 5) --changes the background music to 8166551934 and plays it with the volume of 0.5 and the starttime of 5.
 ```
 This function can be used to change the current music playing in maps, this also replicates to spectators.
@@ -46,9 +37,6 @@ This function can be used to change the current music playing in maps, this also
 
 Example:
 ```lua
-local ServerStorage = game:GetService("ServerStorage")
-local MapLib = ServerStorage.Bindables.GetMapLib:Invoke()()
-
 MapLib:GetButtonEvent(5):Connect(function(player) -- player value here is the player that pressed the button.
     MapLib:Alert("Button 5 was pressed!", Color3.fromRGB(255, 255, 255), 4)
 end)
@@ -59,9 +47,6 @@ This function is the equivalent of `Lib.btnFuncs[5] = function() end` in Flood E
 
 ### MapLib:SetLiquidType(liquid: `BasePart`, liquidType: `string`): `nil`
 ```lua
-local ServerStorage = game:GetService("ServerStorage")
-local MapLib = ServerStorage.Bindables.GetMapLib:Invoke()()
-
 MapLib:SetLiquidType(MapLib.map._Liquid1, "lava") -- changes Liquid1 to lava.
 ```
 This function can be used to change the state of a liquid. There are 3 states you can choose from excluding custom states, these are "water", "acid" and "lava".
