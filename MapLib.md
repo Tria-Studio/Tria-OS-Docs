@@ -29,14 +29,25 @@ This function can be used to change sliding state in maps. True enables sliding 
 
 -----------------------------------------------------
 
-
-
-
-
-
-
-
 ### MapLib:ChangeMusic(musicId: `string|number`, volume: `number?`, startTick: `number?`): `nil`
+
+```lua
+local ServerStorage = game:GetService("ServerStorage")
+local MapLib = ServerStorage.Bindables.GetMapLib:Invoke()()
+
+Lib:ChangeMusic(8166551658, 0.5, 5) --[[Would change the current background music to--]] 8166551658 --[[and play it with the volume of--]] 0.5 --[[and the starttime of--]] 5
+```
+This function can be used to change the current music playing in maps also replicates to spectators.
+
+
+
+
+
+
+
+
+
+
 
 ### MapLib:GetButtonEvent(buttonId: `number`): `Event`
 
@@ -45,9 +56,5 @@ This function can be used to change sliding state in maps. True enables sliding 
 ### MapLib:MovePart(part: `BasePart`, movement: `Vector3`, duration: `number?`): `nil`
 
 ### MapLib:MovePartLocal(part: `BasePart`, movement: `Vector3`, duration: `number?`): `nil`
-
-### MapLib:GetFeature(featureName: `string`): `Feature`
-
-### MapLib:AllowSliding(slideState: `boolean`): `nil`
 
 ### MapLib:GetFeature(featureName: `string`: [`Feature`](FeatureLib.md)
