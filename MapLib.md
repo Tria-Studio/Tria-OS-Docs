@@ -67,7 +67,6 @@ MapLib:SetLiquidType(MapLib.map._Liquid1, "lava") -- changes Liquid1 to lava.
 This function can be used to change the state of a liquid. There are 3 states you can choose from excluding custom states, these are "water", "acid" and "lava".
 
 -----------------------------------------------------
-```
 
 
 
