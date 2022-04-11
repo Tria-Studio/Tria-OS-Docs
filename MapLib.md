@@ -35,9 +35,9 @@ This function can be used to change sliding state in maps. True enables sliding 
 local ServerStorage = game:GetService("ServerStorage")
 local MapLib = ServerStorage.Bindables.GetMapLib:Invoke()()
 
-Lib:ChangeMusic(8166551658, 0.5, 5) --[[changes the background music to--]] 8166551658--[[and plays it with the volume of--]] 0.5 --[[and the starttime of--]] 5
+Lib:ChangeMusic(8166551934, 0.5, 5) --changes the background music to-8166551934 and plays it with the volume of 0.5 and the starttime of 5
 ```
-This function can be used to change the current music playing in maps also replicates to spectators.
+This function can be used to change the current music playing in maps, this also replicates to spectators.
 
 
 
