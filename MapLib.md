@@ -5,6 +5,15 @@ This does not include deprecated items.
 ## Methods
 ### MapLib:Alert(message: `string`, color: `Color3?`, length: `number?`): `nil`
 
+Example:
+```lua
+local MapLib = ServerStorage.Bindables.GetMapLib:Invoke()()
+
+MapLib:Alert("This is an Alert!", Color3.fromRGB(255, 255, 255), 10)
+```
+
+
+
 ### MapLib:ChangeMusic(musicId: `string|number`, volume: `number?`, startTick: `number?`): `nil`
 
 ### MapLib:GetButtonEvent(buttonId: `number`): `Event`
