@@ -14,6 +14,22 @@ MapLib:Alert("This is an Alert!", Color3.fromRGB(255, 255, 255), 10)
 ```
 Alerts can be used to send a message to everyone, they can be customized by color and duration.
 
+### MapLib:AllowSliding(slideState: `boolean`): `nil`
+
+Example:
+```lua
+local ServerStorage = game:GetService("ServerStorage")
+local MapLib = ServerStorage.Bindables.GetMapLib:Invoke()()
+
+MapLib:AllowSliding(true)
+```
+This function can be used to change sliding state in maps.
+
+
+
+
+
+
 
 ### MapLib:ChangeMusic(musicId: `string|number`, volume: `number?`, startTick: `number?`): `nil`
 
