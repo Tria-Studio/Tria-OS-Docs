@@ -1,0 +1,104 @@
+--[[ _______   _                       
+	|__   __| (_)                      
+	   | |_ __ _  __ _        ___  ___ 
+	   | | '__| |/ _` |      / _ \/ __|
+	   | | |  | | (_| |  _  | (_) \__ \
+	   |_|_|  |_|\__,_| (_)  \___/|___/]]--
+
+--[[   TRIA.OS MAP KIT INSTRUCTIONS    ]]--
+
+--[[ BASIC MAP FUNCTIONALITY
+	
+	Every map needs a MapScript, ExitRegion, Spawn, Settings, and buttons as direct childs to the main map model to operate.
+	Spawn has a side marked as the front, players will spawn facing this direction when they spawn.
+	Buttons have to be numbered progressively. If 2 buttons are named _Button3, you won't be able to press one of them. Likewise, if 
+	you have _Button2 and _Button4 but not _Button3, you will not be able to press the fourth button.
+
+]]--
+
+--[[ ON THE TOPIC OF LIQUID
+	
+	There are three default liquid types, those being "water", "acid", and "lava".
+	
+	You also have the ability to make custom water types by going in to Settings, then to Liquids, and duplicate or change the "custom" water state.
+	
+	The name of the configuration below Liquids is the name of the liquid type.
+	The "Color" string is the colour of the liquid type, and it will change to that colour when the type is changed through a script.
+	The "OxygenDepletion" string decides how much air drains per second. (Negative numbers mean you gain air instead of losing air)
+	The "SplashSound" is the ID of the sound it makes when you enter and exit the liquid.
+	
+	You can assign a part to be liquid by turning cancollide off and assigning a liquid type to it, either using a script or a StringValue.
+	To set it using a StringValue, add a StringValue to any liquid part, and rename it "Type". Then, set the Value to any liquid type.
+	To set it using the script, use 'Lib.setLiquidType(Lib.Map._Water._Liquid#, "type")'.
+]]--
+
+--[[ ON THE TOPIC OF WALLJUMPING/WALLRUNNING
+	
+	To assign a part to be a walljump, insert an ObjectValue with the name of "_WallJump", leaving the Value blank.
+	
+	To assign a part to be a wallrun, insert an NumberValue with the name of "_WallRun", and insert how many studs per second you want the player
+	to move towards local positive X direction in the value.
+	
+]]--
+
+--[[ ON THE TOPIC OF BUTTONS
+	
+	Buttons are neccessary components for any map. A person can only exit once they've pressed all the buttons in the map.
+	Group buttons are a type of buttons where 50% of people have to press it before it's pressed. To make a group button, 
+	insert a StringValue called "Group" inside of a button model.
+	
+	You can use the default model for buttons or make your own. To make your own button, you can make it any design. However, it is required
+	that it's in a model called "_Button#", the # being the button number, and there are 2 parts called "Hitbox" and "Light" inside of it,
+	the hitbox being invisible and having cancollide off.
+	
+	In settings, you will be able to find a configuration called "Button". Here, you can customize button locators.
+	"DisabledColor" = the color of the buttons & locators when you don't have to press them yet.
+	"EnabledColor" = the color of normal buttons & locators when you have to press them.
+	"EnabledGroupColor" = the color of group buttons & locators when you have to press them.
+	"LocatorImage" = the image of button locators. 
+	"PressedColor" = the color of buttons when they've been pressed.
+	
+	For locator image there are 4 built-in designs you can pick from. These being:
+	"default"
+	"classic"
+	"circle"
+	"square"
+	
+]]--
+
+--[[ THE SETTINGS
+	
+	--LIGHTING SETTINGS--
+	
+	These are fairly straight forward, as these settings have the exact same names and do the same thing as they do in the "Lighting" property
+	in the explorer, most lighting options are supported, those not supported are as follows: Technology, ClockTime. Trying to use these settings will not work.
+	
+	--MAIN SETTINGS--
+	
+	"Creator" - Insert the creator(s) of the map here.
+	"Difficulty" - The difficulty of the map. ("1" = Easy, "2" = Normal, "3" = Hard, "4" = Insane, and "5" = Extreme.)
+	"Image" - The thumbnail of the map.
+	"MaxTime" - The time players can exist in a map before exceeding max time in seconds. (Maximum you can set is 7 minutes, aka 420 seconds.)
+	"Music" - The ID of the music the map is going to use.
+	"MusicVolume" - The volume of the map music. (e.g 1 = volume of the roblox audio, 0.5 = halved volume, 2 = double volume)
+	"Name" - The map name.
+	"Tags" - A comma seperated array of tags. (e.g. Techo,Tower) 
+
+]]--
+
+--[[ ADVANCED SCRIPTING EXPLANATION, BASIC SCRIPTING EXPLANATION IS IN MAPSCRIPT
+
+	MapLib.ButtonPressed -- Is a RBXSignal that is fired when a button is pressed
+	MapLib.Map -- Reference the map instance
+	MapLib.btnFuncs [Deprecated] -- indexes of this table will be called when a button is pressed, please use MapLib:GetButtonEvent() instead of this.
+	
+	MapLib:GetButtonEvent(buttonID: number): Event(player) -- returns a event that will be fired when the specified buttonID is pressed.
+	
+	all of the below functions are non-asynced meaning that they will not yield
+	
+	MapLib:Alert(message: string, color: Color3, time: number) -- Will display a alert on all players screens
+	MapLib:MovePart(part: BasePart, movement: Vector3, duration: number)
+	MapLib:MovePartLocal(part: BasePart, movement: Vector3, duration: number)
+	MapLib:SetLiquidType(liquid: BasePart, type: string) -- Sets the liquid type
+	
+]]--
