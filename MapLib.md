@@ -18,3 +18,5 @@ This does not include deprecated items.
 ### MapLib:GetFeature(featureName: `string`): `Feature`
 
 ### MapLib:AllowSliding(slideState: `boolean`): `nil`
+
+### MapLib:GetFeature(featureName: `string`: [`Feature`](FeatureLib.md)
