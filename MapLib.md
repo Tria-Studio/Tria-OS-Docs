@@ -12,9 +12,7 @@ local MapLib = ServerStorage.Bindables.GetMapLib:Invoke()()
 
 MapLib:Alert("This is an Alert!", Color3.fromRGB(255, 255, 255), 10)
 ```
-
-Alerts can be used for ...
-
+Alerts can be used to send a message to everyone, they can be customized by color and duration.
 
 
 ### MapLib:ChangeMusic(musicId: `string|number`, volume: `number?`, startTick: `number?`): `nil`
