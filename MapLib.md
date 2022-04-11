@@ -49,7 +49,7 @@ Lib:GetButtonEvent(5):Connect(function(player) -- player value here is the playe
     MapLib:Alert("Button 5 was pressed!", Color3.fromRGB(255, 255, 255), 4)
 end)
 ```
-This function is the equivalent of `Lib.btnFuncs[5] = function() end` in Flood Escape 2. It can be used to run functions once a button was been pressed.
+This function is the equivalent of `Lib.btnFuncs[5] = function() end` in Flood Escape 2. It can be used to run functions once a button has been pressed.
 
 -----------------------------------------------------
 
