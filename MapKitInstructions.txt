@@ -82,7 +82,6 @@
 	"Music" - The ID of the music the map is going to use.
 	"MusicVolume" - The volume of the map music. (e.g 1 = volume of the roblox audio, 0.5 = halved volume, 2 = double volume)
 	"Name" - The map name.
-	"Tags" - A comma seperated array of tags. (e.g. Techo,Tower) 
 
 ]]--
 
