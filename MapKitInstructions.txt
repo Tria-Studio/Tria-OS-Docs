@@ -76,7 +76,7 @@
 	--MAIN SETTINGS--
 	
 	"Creator" - Insert the creator(s) of the map here.
-	"Difficulty" - The difficulty of the map. ("1" = Easy, "2" = Normal, "3" = Hard, "4" = Insane, and "5" = Extreme.)
+	"Difficulty" - The difficulty of the map. ("1" = Easy, "2" = Normal, "3" = Hard, "4" = Insane,"5" = Extreme and "6" = Valiant.)
 	"Image" - The thumbnail of the map.
 	"MaxTime" - The time players can exist in a map before exceeding max time in seconds. (Maximum you can set is 7 minutes, aka 420 seconds.)
 	"Music" - The ID of the music the map is going to use.

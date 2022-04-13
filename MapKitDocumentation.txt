@@ -71,7 +71,7 @@ C-Settings
 
 1	-SPAWN-
 	Part named Spawn
-	The point at which the players will spawn, with the front of the part being where players spawn
+	The point at which the players will spawn, with the front of the part being where players spawn.
 
 2	-EXITREGION-
 	Part named ExitRegion
