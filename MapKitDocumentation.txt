@@ -115,9 +115,7 @@ C-Settings
 	You can use the default model for buttons or make your own. To make your own button, you can make it any design. However, it is required
 	that it's in a model called "_Button#", the # being the button number, and there are 2 parts called "Hitbox" and "Light" inside of it,
 	the hitbox being invisible and having cancollide off
-	
-	See C-3 for button settings.
-	
+
 8	-BUTTON EFFECTS
 	Part with the value added _DestroyX _ExplodeX _FallX _HideX _ShowX where X is button number
 	Inbuilt function to allow for parts to be changed without scripting, when X button is pressed the effect triggers
@@ -126,9 +124,5 @@ C-Settings
 	_Fall		-Makes the part unanchored
 	_Hide		-Hides the part
 	_Show		-Shows the part
-
-]]
-
---[[SECTION C SETTINGS
 
 ]]
