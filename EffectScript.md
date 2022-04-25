@@ -22,10 +22,10 @@ MapScript
 local MapLib = game.GetMapLib:Invoke()()
 local map = MapLib.map
 
-task.wait(3)
+task.wait(10)
 map.StartLaser:FireAllClients()
 
-task.wait(3)
+task.wait(10)
 map.StopLaser:FireAllClients()
 ```
 
