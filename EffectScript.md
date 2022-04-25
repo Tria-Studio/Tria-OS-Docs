@@ -32,7 +32,7 @@ EffectScript
 local MapLib = game.GetMapLib:Invoke()()
 local map = MapLib.map
 
-map.StartLaser.OnClientEvent:Connect(function)
+map.StartLaser.OnClientEvent:Connect(function()
     --Start Laser
 end)
 
