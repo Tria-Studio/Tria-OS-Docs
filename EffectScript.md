@@ -14,7 +14,7 @@ Keep in mind that reparenting the EffectScript will cause the EffectScript not t
 The EffectScript uses the same methods as the MapScript to get the MapLib, being 
 `local MapLib = game.GetMapLib:Invoke()()`
 
-Below is a simple example of how to use the EffectScript, in this example we will make a laser effect similar to Dystopia
+Below is a simple example of how to use the EffectScript, in this example we will make a laser effect similar to Dystopia.
 
 MapScript
 ```lua
@@ -24,6 +24,18 @@ local map = MapLib.map
 
 task.wait(3)
 map.StartLaser:FireAllClients()
+```
+
+EffectScript
+```lua
+
+local MapLib = game.GetMapLib:Invoke()()
+local map = MapLib.map
+
+map.StartLaser.OnClientEvent:Connect(function)
+    --Start Laser
+end)
+
 ```
 
 
