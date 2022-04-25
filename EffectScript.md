@@ -41,7 +41,7 @@ local connection
 
 map.StartLaser.OnClientEvent:Connect(function()
     connection = RunService.Heartbeat:Connnect(function()
-        laser.CFrame *= CFrame.Angles(0, math.rad(1), 0)
+        laser.CFrame *= CFrame.Angles(math.rad(1), 0, 0)
     end)
 end)
 
@@ -50,7 +50,6 @@ map.EndLaser.OnClientEvent:Connect(function()
      connection:Disconnect()
      end
 end)
-
 ```
 
 
