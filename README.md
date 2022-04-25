@@ -5,5 +5,5 @@ This repository has documentation for Tria.OS, feel free to make well written pu
 [API Reference](MapLib.md)
 
 # Advanced
-[Making spectate seamless](SeamlessSpectate.md)
-\n[EffectScript](EffectScript.md)
+[Making spectate seamless](SeamlessSpectate.md),
+[EffectScript](EffectScript.md)
