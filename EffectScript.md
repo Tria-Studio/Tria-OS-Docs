@@ -47,7 +47,7 @@ end)
 
 map.EndLaser.OnClientEvent:Connect(function()
    if connection then
-     connection:Disconnect()
+        connection:Disconnect()
      end
 end)
 ```

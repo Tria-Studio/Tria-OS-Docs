@@ -8,4 +8,4 @@
 
 ## Players
 
-PlayersFeature:GetPlayers(): `[]Player`
+### PlayersFeature:GetPlayers(): `[]Player`

@@ -6,3 +6,4 @@ This repository has documentation for Tria.OS, feel free to make well written pu
 
 # Advanced
 [Making spectate seamless](SeamlessSpectate.md)
+[EffectScript](EffectScript.md)
