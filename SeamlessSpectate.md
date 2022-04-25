@@ -25,7 +25,6 @@ end)
 heartbeat:Disconnect()
 ```
 
-
 ## Changing the characters position on the server
 When you change the position of the character on the server it takes over replication from the client, this causes similar effects to anchoring the player
 
