@@ -6,7 +6,7 @@ In order for the EffectScript to communicate we use RemoteEvents which are fired
  
 When a round starts all the old EffectScripts are deleted and if a new EffectScript is present, the script will be inserted into the Players PlayerGUI, this is to prevent the EffectScript from being deleted if the player dies.
 
-If you wish to manually edit the EffectScript the location of it is `game.Players.LocaPlayer.PlayerGUI.Timer`
+If you wish to manually edit the EffectScript the location of it is `game.Players.LocalPlayer.PlayerGUI.Timer`
 Keep in mind that reparenting the EffectScript will cause the EffectScript not to be deleted on the next round and can potentially cause memory leaks.
 
 ## Examples of usage
@@ -24,6 +24,9 @@ local map = MapLib.map
 
 task.wait(3)
 map.StartLaser:FireAllClients()
+
+task.wait(3)
+map.StopLaser:FireAllClients()
 ```
 
 EffectScript
@@ -32,8 +35,13 @@ EffectScript
 local MapLib = game.GetMapLib:Invoke()()
 local map = MapLib.map
 
+local RunService = game:GetService("RunService")
+
 map.StartLaser.OnClientEvent:Connect(function()
-    --Start Laser
+    local connection
+    connection = RunService.Heartbeat:Connnect(function()
+        laser.CFrame *= CFrame.Angles(0, math.rad(1), 0)
+    end)
 end)
 
 ```
