@@ -53,36 +53,6 @@ This function can be used to change the state of a liquid. There are 3 states yo
 
 -----------------------------------------------------
 
-### MapLib:GetFeature("Lighting"):SetLighting(newLighting: { [string]: any }): `nil`
-
-Example:
-```lua
-MapLib:GetFeature("Lighting"):SetLighting({
-          FogEnd = 100,
-          FogStart = 1,
-          FogColor = Color3.new(0, 1, 1)
-        }) 
-end)
-```
-This function can be used to change a map's lighting settings during a round.
-
------------------------------------------------------
-
-### MapLib:GetFeature("Lighting"):EaseLighting(newLighting: { [string]: any }, Tween: Tween): `nil`
-
-Example:
-```lua
-MapLib:GetFeature("Lighting"):EaseLighting({
-          FogEnd = 100,
-          FogStart = 1,
-          FogColor = Color3.new(0, 1, 1),
-        },TweenInfo.new(4, Enum.EasingStyle.Sine, Enum.EasingDirection.Out)) -- smoothly changes the lighting settings over a period of 4 seconds
-end)
-```
-This function can be used to dynamically change lighting settings and ease into them over time using tweens.
-
------------------------------------------------------
-
 ### MapLib:MovePart(part: `BasePart`, movement: `Vector3`, duration: `number?`): `nil`
 
 ### MapLib:MovePartLocal(part: `BasePart`, movement: `Vector3`, duration: `number?`): `nil`
