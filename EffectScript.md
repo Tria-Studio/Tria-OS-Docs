@@ -45,7 +45,7 @@ map.StartLaser.OnClientEvent:Connect(function()
     end)
 end)
 
-map.EndLaser.OnClientEvent:Connect(function()
+map.StopLaser.OnClientEvent:Connect(function()
    if connection then
         connection:Disconnect()
      end
