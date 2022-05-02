@@ -4,7 +4,7 @@
 
 ### LightingFeature:SetLighting(newLighting: `{ [string]: any }`): `nil`
 
-### LightingFeature:EaseLighting(newLighting: `{ [string]: any }`, tweenInfo: `TweenInfo`): `TweenInfo`
+### LightingFeature:EaseLighting(newLighting: `{ [string]: any }`, tweenInfo: `TweenInfo`): `Tween`
 
 ## Players
 

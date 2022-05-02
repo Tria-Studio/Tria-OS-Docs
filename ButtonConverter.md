@@ -3,6 +3,17 @@
 Can be used to convert TRIA 0.6 buttons to 0.7
 
 
+
+HOW TO USE
+
+1. Load into studio and make sure your map is named "Map" AND  MAKE SURE YOUR MAP IS GROUPED
+2. Find the Command Bar tab and copy the code below into the bar
+3. Press Enter
+4. Your map is now converted to 0.7 buttons
+5. Select your map and upload it to your mapslot 
+6. Upon the release of 0.7 you can Publish your map using our MapManager
+7. Enjoy our advanced button customization system 
+
 ```lua
 
 local map = workspace:FindFirstChild("Map") or workspace:FindFirstChildWhichIsA("Model")
